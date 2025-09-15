@@ -9,11 +9,12 @@ navbar{
     align-items: center;
     justify-content: space-around; 
     background-color: rgb(50, 45, 49);
-    height: 10vh;
+    height: 75px;
     box-shadow: 10px 0px 20px 10px rgb(50, 45, 49);
     position: fixed;
     width: 100%;
     z-index: 999999;
+
 }
 
 navbar h1{
@@ -312,6 +313,8 @@ footer{
     font-family: 'Spicy Rice', cursive;
     position: relative;
     top: 250px;
+    font-size: 20px;
+    ;
     width: 100%;
 }
 
@@ -469,6 +472,7 @@ footer{
     position: relative;
     top: 300px;
     width: 100%;
+    
 }
 }
 
@@ -494,17 +498,27 @@ footer{
         height: 170px;
     }
 
+    .aboutusheader{
+        font-size: 45px;
+        padding: 100px 20px 0 20px;
+    }
+
     .aboutuspara{
-        font-size: 20px;
+        font-size: 18px;
         padding: 20px 20px 0 20px;
     }
 
     #contact {
-        padding: 150px 20px;
+        padding: 200px 20px;
+    }
+
+    #flavours h1{
+        font-size: 45px;
+        margin-top:40px;
     }
 
     footer{
-        top:320px;
+        top:-30px;
     }
 }
 
@@ -522,6 +536,11 @@ footer{
         padding-top: 20px;
         transition: transform 0.3s ease;
         transform: translateX(100%); /* alapból kívülre */
+    }
+
+    #Zilchlogo{
+        width: 60px;
+        height: 60px;
     }
 
     #myTopnav.active #navlinks {
@@ -614,6 +633,56 @@ footer{
         top:220px;
     }
 }
+
+@media (max-width: 420px) {
+
+    #homeimg2{
+        width: 300px;
+    }
+
+    #homeimg3{
+        width: 100px;
+        height: 100px;
+    }
+
+    .gallery img{
+        width:100px;
+        height: 100px;
+    }
+
+    #flavours h1, #about .aboutusheader, #contact h1 {
+        font-size: 2.2rem;
+    }
+
+    #flavours p{
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .aboutuspara{
+        font-size: 14px;
+        padding: 5px 20px 0 20px;
+    }
+
+    #contact {
+        padding: 150px 20px;
+    }
+
+    footer{
+        
+        top:-30px;
+    }
+
+    #contact p {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    
+}
+
+
 
 
 .burger {
