@@ -689,7 +689,7 @@ footer{
             display: none;
             cursor: pointer;
             position: fixed;
-            top: 30px;
+            top: 20px;
             right: 35px;
             z-index: 9999999;
         }
@@ -715,5 +715,6 @@ footer{
 /* img {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 } */
+
 
 
