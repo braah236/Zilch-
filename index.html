@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zilch!</title>
+    <link rel="icon" href="pics/Logo3.png" type="image/x-icon">
+    <link rel ="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <navbar id="myTopnav">
+        
+        <a id="Zilch" href="#home">
+            <img src="pics/Logo5.png" alt="Zilch! Logo" style="width: 75px; height:75px; margin:0; padding:0;">
+            <h1>Zilch!</h1>
+        </a>
+        <div id="navlinks">
+            <a href="#flavours">Flavours</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+
+        
+        </navbar>
+        <div class="burger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    </header>
+    
+
+    <main>
+        <section id="home">
+            <img id="homeimg1" src="pics/pic.png" alt="Ice cream pic"/>
+            <div id="homeimgs">
+                <img id="homeimg2" src="pics/no-sugar-added-title.png" alt="No sugar added title" id="ice-cream1"/>
+                <img id="homeimg3" src="pics/3IC.jpg" alt="Ice cream bowl pic" />
+            </div>
+            
+        </section>
+        <section id="flavours">
+            <!-- <img id="scoop" class="slide-img" src="pics/scoop1-removebg-preview.png" alt="Scoop icon"/> -->
+             <h1>Flavours</h1>
+        
+             <p>
+                If you love deliciously creamy ice cream but not the fat or carbs, you’ve come to the right place! With less fat and carbs than standard ice cream, Zilch is a delicious, full creamy, taste sensation.
+
+             </p>
+
+            <div class="gallery">
+                <img id="gallerypic1" src="pics/IC2.png"/>
+                <img id="gallerypic2" src="pics/IC3.png"/>
+                <img id="gallerypic3" src="pics/IC5.png"/>
+            </div>
+        </section>
+        <section id="about">
+            
+            
+                <h1 class="aboutusheader">About Us</h1>
+                    
+                    <p class="aboutuspara">
+                        Zilch is a family-run business based in the UK, passionate about creating delicious ice cream that is both low in fat and sugar-free. Our journey began with a simple idea: to craft a treat that everyone can enjoy without compromising on taste or health.
+
+                        At Zilch, we believe that indulgence should not come at the cost of well-being. Our ice creams are made using high-quality ingredients, ensuring that each scoop is rich, creamy, and bursting with flavor. We take pride in our innovative recipes that cater to those seeking healthier alternatives without sacrificing the joy of eating ice cream.
+
+                        Our commitment to quality and customer satisfaction drives us to continuously improve and expand our range of flavors. Whether you're looking for a guilt-free dessert or a refreshing snack, Zilch has something for everyone.
+
+                        Join us on our mission to redefine indulgence with ice cream that is as good for your taste buds as it is for your body. Experience the joy of Zilch – where every bite is a celebration of flavor and health.
+                    </p>
+
+
+
+                    <img src="pics/backgroundIC5.jpg" alt="Ice cream bowl" class="aboutusimg"/>
+            
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, feedback, or would like to get in touch with us, please feel free to reach out. We value your input and look forward to hearing from you!</p>
+            <p>Email: <a href="mailto:info@zilch.com"><i class="fa-solid fa-envelope"></i> info@zilch.com</a></p>
+<p>Phone: <a href="tel:+1234567890"><i class="fa-solid fa-phone"></i> +1 (234) 567-890</a></p>
+<p>Address: <i class="fa-solid fa-location-dot"></i> 123 Ice Cream Lane, Sweet City, SC 12345</p>
+
+<footer>
+    <p>&copy; 2023 Zilch Ice Cream. All rights reserved.</p>
+</footer>
+        </section>
+    </main>
+    
+
+    <!-- <script src="imgslidein.js"></script> -->
+
+    <script>
+        const pics = document.querySelectorAll('.gallery img');
+
+        pics.forEach((pic, i) => {
+        pic.addEventListener('mouseenter', () => {
+            pics.forEach((p, j) => {
+            if (i === j) {
+                p.style.transform = "translateY(-30px) scale(2.5)";
+            } else if (j < i) {
+                p.style.transform = "translateX(-120px) scale(0.8)";
+            } else {
+                p.style.transform = "translateX(120px) scale(0.8)";
+            }
+            });
+        });
+        pic.addEventListener('mouseleave', () => {
+            pics.forEach(p => p.style.transform = "");
+        });
+        });
+
+
+        function myFunction(x) {
+  x.classList.toggle("change");
+  const navbar = document.getElementById("myTopnav");
+            navbar.classList.toggle("active");
+}
+    </script>
+    </body>
+    </html>
